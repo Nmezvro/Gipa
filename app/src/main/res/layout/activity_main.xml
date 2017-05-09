@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#492061"
+    tools:context="ge.komaroveli.gipa.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:id="@+id/linearLayout2">
+
+        <TextView
+            android:id="@+id/twLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Level: 1. Speed 5sec."
+            android:textColor="@android:color/background_light"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/twScore"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Score: 0"
+            android:textColor="@android:color/background_light"
+            android:textSize="25sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/btnRed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:layout_margin="5dp"
+            android:background="@drawable/btn_left"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:text="Red"/>
+
+        <Button
+            android:id="@+id/btnGreen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:layout_margin="5dp"
+            android:background="@drawable/btn_mid"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:text="Green"/>
+
+        <Button
+            android:id="@+id/btnBlue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:layout_margin="5dp"
+            android:background="@drawable/btn_mid"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:text="Blue"/>
+
+        <Button
+            android:id="@+id/btnBlack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:layout_margin="5dp"
+            android:background="@drawable/btn_mid"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:text="Black"/>
+
+        <Button
+            android:id="@+id/btnWhite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:layout_margin="5dp"
+            android:background="@drawable/btn_right"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:text="White"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/twProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5.00"
+        android:textSize="20sp"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignParentEnd="true"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/twProgress"/>
+
+    <TextView
+        android:id="@+id/twColorType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="---"
+        android:textSize="35sp"
+        android:layout_below="@+id/progressBar"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/twColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Color"
+        android:textStyle="bold"
+        android:textSize="35sp"/>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_start"
+        android:text="Start"/>
+
+</RelativeLayout>
